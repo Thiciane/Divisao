@@ -1,7 +1,15 @@
-﻿Console.WriteLine("Informe dois números: ");
+﻿try
+{
+    Console.WriteLine("Informe dois números: ");
 
-double numero1 = Convert.ToDouble(Console.ReadLine());
-double numero2 = Convert.ToDouble(Console.ReadLine());
+    int numero1 = Convert.ToInt32(Console.ReadLine());
+    int numero2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(numero1/numero2);
+    int resultado = numero1 / numero2;
+    Console.WriteLine($"O resultado é: {resultado}");
+}
+catch(Exception ex)
+{
+    Console.WriteLine("ERROR!");
+}
 Console.ReadKey();
